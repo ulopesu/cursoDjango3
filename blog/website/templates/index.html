@@ -1,0 +1,21 @@
+<h1>Blog!!!!</h1>
+
+{{name}}
+<br>
+<br>
+<br>
+
+{{coisa}}
+
+<ul>
+    {% for  item in  listaHabilidades%}
+        {% if item == 'Django' %}
+            <li><b>{{item}}</li>
+        {% else %}
+            <li>{{item}}</li>
+        {% endif %}
+        
+    {% endfor %}
+</ul>
+
+{{listaHabilidades}}
