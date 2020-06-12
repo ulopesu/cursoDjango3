@@ -1,8 +1,38 @@
 from django.shortcuts import render
-from .models import Post
+from django.contrib import messages
+from rest_framework import viewsets
+
+from .models import Post, Contato
+from .serializer import ContatoSerializer
 
 
 def hello_blog(request):
+    return render(request, 'index.html')
+
+
+class ContatoViewSet(viewsets.ModelViewSet):
+    queryset = Contato.objects.all()
+    serializer_class = ContatoSerializer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
     listaH = [
         'C',
         'C++',
@@ -22,4 +52,8 @@ def hello_blog(request):
             'posts': listaPosts
             }
 
-    return render(request, 'index.html', data)
+    return render(request, 'index.html', data)"
+"""
+
+
+
