@@ -3,7 +3,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = '!nu@$cr#tm(4vg_k@nno%ke6-)pcn6dy$g7myia&i38bqk($vv'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', 'ulopes.xyz', 'www.ulopes.xyz']
 
