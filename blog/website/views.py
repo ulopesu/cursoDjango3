@@ -6,8 +6,12 @@ from .models import Post, Contato
 from .serializer import ContatoSerializer
 
 
-def hello_blog(request):
-    return render(request, 'index.html')
+def home(request):
+    listaPosts = Post.objects.all()
+    data = {
+            'posts': listaPosts
+            }
+    return render(request, 'index.html', data)
 
 
 class ContatoViewSet(viewsets.ModelViewSet):
@@ -44,13 +48,6 @@ class ContatoViewSet(viewsets.ModelViewSet):
         'Ionic',
         'Django',
     ]
-
-    listaPosts = Post.objects.all()
-
-    data = {'name': 'Curso Django',
-            'listaHabilidades': listaH,
-            'posts': listaPosts
-            }
 
     return render(request, 'index.html', data)"
 """
