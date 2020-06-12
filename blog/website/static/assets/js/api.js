@@ -1,5 +1,5 @@
 const apiData = {
-    url: 'http://127.0.0.1:8000/contatos/'
+    url: 'http://ulopes.xyz/contatos/'
 }
 
 const contact_form = document.getElementById("contact_form");
