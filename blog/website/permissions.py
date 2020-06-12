@@ -1,7 +1,7 @@
-from rest_framework.permissions import permissions
+from rest_framework.permissions import BasePermission
 
 
-class contatosPermission(BasePermission):
+class contatoPermission(BasePermission):
     def has_permission(self, request, view):
         if request.method == 'POST' or request.user.is_staff:
             return True

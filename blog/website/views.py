@@ -4,6 +4,7 @@ from rest_framework import viewsets
 
 from .models import Post, Contato
 from .serializer import ContatoSerializer
+from .permissions import contatoPermission
 
 
 def home(request):
@@ -17,7 +18,7 @@ def home(request):
 class ContatoViewSet(viewsets.ModelViewSet):
     queryset = Contato.objects.all()
     serializer_class = ContatoSerializer
-
+    permission_classes = [contatoPermission]
 
 
 
