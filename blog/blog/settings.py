@@ -5,7 +5,7 @@ SECRET_KEY = '!nu@$cr#tm(4vg_k@nno%ke6-)pcn6dy$g7myia&i38bqk($vv'
 
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'ulopes.xyz', 'www.ulopes.xyz']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
