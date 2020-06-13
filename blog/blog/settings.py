@@ -7,7 +7,7 @@ RECAPTCHA_SITE_KEY = '6Leq5aMZAAAAAPKPxFTM9toH_kma0-jhz6hU_Nkp'
 
 RECAPTCHA_SECRET_KEY = '6Leq5aMZAAAAAH6EoTwSomHIDzzdqKXZ-67W8zUW'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ulopes.xyz', 'www.ulopes.xyz']
 
