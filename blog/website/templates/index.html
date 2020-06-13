@@ -11,6 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{% static "assets/css/main.css" %}" />
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 	<body class="is-preload">
 
@@ -78,6 +79,7 @@
 										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required/></div>
 										<div class="col-12"><input type="text" name="assunto" id="assunto" placeholder="Assunto" required/></div>
 										<div class="col-12"><textarea name="mensagem" id="mensagem" placeholder="Mensagem" rows="4" required></textarea></div>
+										<div class="g-recaptcha" data-sitekey="{{ site_key }}" ></div>
 									</div>
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" /></li>

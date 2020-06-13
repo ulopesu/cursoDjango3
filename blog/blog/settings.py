@@ -3,9 +3,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = '!nu@$cr#tm(4vg_k@nno%ke6-)pcn6dy$g7myia&i38bqk($vv'
 
-DEBUG = False
+RECAPTCHA_SITE_KEY = '6Leq5aMZAAAAAPKPxFTM9toH_kma0-jhz6hU_Nkp'
 
-ALLOWED_HOSTS = ['localhost', 'ulopes.xyz', 'www.ulopes.xyz']
+RECAPTCHA_SECRET_KEY = '6Leq5aMZAAAAAH6EoTwSomHIDzzdqKXZ-67W8zUW'
+
+DEBUG = True
+
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ulopes.xyz', 'www.ulopes.xyz']
+
+SILENCED_SYSTEM_CHECKS = ['captcha.recaptcha_test_key_error']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -14,6 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'captcha',
     'django_filters',
     'rest_framework',
     'website',
