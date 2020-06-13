@@ -11,7 +11,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ulopes.xyz', 'www.ulopes.xyz']
 
-SILENCED_SYSTEM_CHECKS = ['captcha.recaptcha_test_key_error']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
