@@ -23,7 +23,7 @@ contact_form.addEventListener("submit", (evt) => {
     
         if (request.status === 201 && request.readyState === 4) {
             alert("MENSAGEM ENVIADA!!!");
-            contact_form.reset();
+            
         } else {
             alert("Algo de errado não está certo, MENSAGEM NÃO ENVIADA!!!");
             //console.log(request.responseText);
@@ -33,5 +33,5 @@ contact_form.addEventListener("submit", (evt) => {
     formData = new FormData(contact_form)
     request.send(formData);
     
-    
+    contact_form.reset();
 });
