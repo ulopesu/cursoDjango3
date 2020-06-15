@@ -51,9 +51,9 @@
 							{%for post in posts %}
 								<article class="col-6 col-12-xsmall work-item">
 									{% if post.imagem %}
-										<a href="{{ post.imagem.url }}" class="image fit thumb"><img src="{{ post.imagem.url }}" alt="" width="400px" height="250px"/></a>
+										<a href="{{ post.imagem.url }}" class="image fit thumb"><img src="{{ post.imagem.url }}" alt="" width="250px" height="250px"/></a>
 									{% else %}
-										<a href="{% static "images/thumbs/05.jpg" %}" class="image fit thumb"><img src="{% static "images/thumbs/05.jpg" %}" alt="" width="400px" height="250px"/></a>
+										<a href="{% static "images/thumbs/05.jpg" %}" class="image fit thumb"><img src="{% static "images/thumbs/05.jpg" %}" alt="" width="250px" height="250px"/></a>
 									{% endif %}
 									<h3>{{post.title}}</h3>
 									<p>{{post.content}}</p>
